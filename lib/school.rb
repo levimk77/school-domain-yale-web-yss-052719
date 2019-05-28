@@ -20,8 +20,12 @@ class School
   end
  
   def sort 
-    
-
+    sortedArray = {}
+    @roster.map do |key, value|
+      sortedArray[key] = []
+      sortedArray[key] = @roster[key].sort
+    end
+    return sortedArray
   end
   
   
