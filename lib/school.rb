@@ -24,6 +24,8 @@ class School
     @roster.map do |key, value|
       sortedArray[key] = @roster[key].sort
     end
+    return sortedArray
+    
   end
   
   
