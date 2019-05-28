@@ -22,7 +22,7 @@ class School
   def sort 
     sortedArray = {}
     @roster.map do |key, value|
-      @roster[key].sort
+      sortedArray[key] = @roster[key].sort
     end
   end
   
